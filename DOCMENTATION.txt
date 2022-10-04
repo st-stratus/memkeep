@@ -1,0 +1,48 @@
+import memkeep
+
+FILE mem - extends all attributes
+
+FUNC mem.newpath('Directory Location')              - Creates a new path that your data is saved in (required)
+
+FUNC mem.mempath('Directory Location')              - Sets memkeep to save data to this directory (required)
+
+FUNC mem.save('Name', 'Data')                       - Saves data as a string
+
+FUNC mem.get('Name')                                - Gets data from memkeep
+
+FUNC mem.remove('Name')                             - Deletes a memkeep variable
+
+FUNC mem.list(True / False)                         - Lists every data set in the selected directory False: Raw List, True: Numbered List
+
+FUNC mem.clearmem()                                 - Clears all data & data holders
+
+FUNC mem.exists('Name')                             - Conditionaly returns True or False depending on if a data holder exists
+
+CLASS mem.array() - Extends all array attributes
+
+FUNC mem.array.make('Array Name')                   - Creates an array / list
+
+FUNC mem.array.add('Array Name', *Datas)            - Adds one or more data values to an array
+
+FUNC mem.array.clear('Array Name')                  - Clears all data out of an array
+
+FUNC mem.array.isempty('Array Name')                - Conditionaly returns True or False depending on if the array is empty
+
+FUNC mem.array.size('Array Name')                   - Returns the size of the array / How many objects exist in it
+
+FUNC mem.array.get('Array Name')                    - Returns the entire array as a pythonic list
+
+FUNC mem.array.remove('Array Name')                 - Removes an array
+
+FUNC mem.array.addlist('Array Name', List)          - Appends a pythonic list to a memkeep array
+
+CLASS mem.array.item() - Extends all array item attributes
+
+FUNC mem.array.item.get('Array Name', NUM)         - Returns a single array object
+
+FUNC mem.array.item.remove('Array Name', NUM)      - Removes an object from a memkeep array
+
+FUNC mem.array.item.change('Array Name', NUM, str) - Changes the data of an item in an array
+
+
+
